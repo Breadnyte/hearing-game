@@ -16,6 +16,8 @@ function movement()
 	
 	hspd = lengthdir_x(input_length * spd, input_direction);
 	vspd = lengthdir_y(input_length * spd, input_direction);
+	
+	//this is a change at the bottom - Adin did this
 }
 	
 
