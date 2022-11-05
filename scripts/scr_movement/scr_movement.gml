@@ -2,8 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function movement()
 {
-	//this is an animportant change - THIS IS A NEW LINE
-	
 	//setting up movement
 	right = (keyboard_check(vk_right) || keyboard_check(ord("D")));
 	left = (keyboard_check(vk_left) || keyboard_check(ord("A")));
@@ -17,7 +15,24 @@ function movement()
 	hspd = lengthdir_x(input_length * spd, input_direction);
 	vspd = lengthdir_y(input_length * spd, input_direction);
 	
-	//this is a change at the bottom - Adin did this
+	//animating player movement
+	var old = sprite_index;
+	
+	if (input_length != 0)
+	{
+		direction = input_direction;
+		sprite_index = moving;
+	}
+	else
+	{
+		sprite_index = idle;
+	}
+	
+	if (old != sprite_index)
+	{
+		frame = 0;
+	}
+	playeranim();
 }
 	
 

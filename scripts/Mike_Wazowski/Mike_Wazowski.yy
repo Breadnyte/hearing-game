@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_movement",
+  "name": "Mike_Wazowski",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Player Scripts",
-    "path": "folders/Scripts/Player Scripts.yy",
+    "name": "Mike Wazowski",
+    "path": "folders/Scripts/Mike Wazowski.yy",
   },
 }

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_movement",
+  "name": "scr_playeranim",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
