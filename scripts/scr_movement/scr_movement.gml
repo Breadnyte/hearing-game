@@ -2,6 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function movement()
 {
+	//this is an animportant change
+	
 	//setting up movement
 	right = (keyboard_check(vk_right) || keyboard_check(ord("D")));
 	left = (keyboard_check(vk_left) || keyboard_check(ord("A")));
