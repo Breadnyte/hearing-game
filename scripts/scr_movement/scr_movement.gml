@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function movement()
 {
-	//this is an animportant change - gabe was here
+	//this is an animportant change - gabe was NOT HERE ANYMORE HAHA ITS CONRAD THE GHOST
 	
 	//setting up movement
 	right = (keyboard_check(vk_right) || keyboard_check(ord("D")));
