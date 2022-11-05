@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function movement()
 {
-	//this is an animportant change
+	//this is an animportant change - gabe was here
 	
 	//setting up movement
 	right = (keyboard_check(vk_right) || keyboard_check(ord("D")));
