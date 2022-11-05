@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function movement()
 {
-	//this is an animportant change - Adin was NOT HERE ANYMORE HAHA ITS CONRAD THE GHOST
+	//this is an animportant change - THIS IS A NEW LINE
 	
 	//setting up movement
 	right = (keyboard_check(vk_right) || keyboard_check(ord("D")));
