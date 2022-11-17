@@ -1,6 +1,6 @@
 /// @description Creating expanding circle
 
-r++;
+r = r + 1.5;
 
 
 
