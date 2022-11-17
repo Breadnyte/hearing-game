@@ -14,6 +14,10 @@ idle = spr_player;
 moving = spr_player_run;
 state = "move";
 
+//setting up echolocation variables
+r = 1;
+drawing = false;
+
 
 
 

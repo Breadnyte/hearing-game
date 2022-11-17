@@ -49,7 +49,7 @@ function collision()
 		hspd = 0;
 	}
 	x += hspd;
-	
+
 	//vertical collision
 	if (place_meeting(x, y + vspd, obj_solid))
 	{
