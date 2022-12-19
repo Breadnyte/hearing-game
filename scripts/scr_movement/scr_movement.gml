@@ -33,7 +33,6 @@ function movement()
 		frame = 0;
 	}
 	playeranim();
-	ecolocation();
 }
 	
 
@@ -61,13 +60,4 @@ function collision()
 		vspd = 0;
 	}
 	y += vspd;
-}
-
-function ecolocation()
-{
-	if !(x == xprevious && y == yprevious) //if last position is different than current
-	{
-		//this will get called too much without a delay, but idc
-		instance_create_layer(x, y, "Instances", obj_pulse);
-	}
 }

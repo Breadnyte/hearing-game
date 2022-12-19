@@ -6,7 +6,7 @@ image_speed = 0;
 //setting movement variables
 hspd = 0;
 vspd = 0;
-spd = 2.5;
+spd = 2;
 
 //setting animation variables
 frame = 0;
@@ -18,6 +18,8 @@ state = "move";
 r = 1;
 drawing = false;
 
-
+//testing pulse stuff
+steptime = 0;
+stepdelay = 15;
 
 
