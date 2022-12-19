@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_pulse",
+  "name": "obj_cube",
   "spriteId": {
-    "name": "spr_pulse",
-    "path": "sprites/spr_pulse/spr_pulse.yy",
+    "name": "spr_cube",
+    "path": "sprites/spr_cube/spr_cube.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,15 +23,11 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [
-    {"x":0.0,"y":0.0,},
-    {"x":32.0,"y":0.0,},
-    {"x":32.0,"y":32.0,},
-    {"x":0.0,"y":32.0,},
-  ],
+  "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_pulse","path":"objects/obj_pulse/obj_pulse.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],

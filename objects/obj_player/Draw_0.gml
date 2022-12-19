@@ -1,6 +1,9 @@
 /// @description Begin echolocation
+
+
 draw_self();
 
+/*
 draw_set_color(c_white);
 
 if !(x == xprevious && y == yprevious)
@@ -20,4 +23,5 @@ if 	(r >= 50)
 	drawing = false;
 	r = 0;
 }
+*/
 
