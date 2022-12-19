@@ -11,7 +11,8 @@ if !(x == xprevious && y == yprevious)
 if (drawing == true)
 {
 	draw_circle(x, y, r, true);
-	alarm[0] = 1;
+	r = r + 1.5;
+
 }
 
 if 	(r >= 50)
