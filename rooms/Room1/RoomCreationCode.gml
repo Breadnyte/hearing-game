@@ -1,5 +1,6 @@
 
 
+
 //creates the cubes for the background
 var spriteWidth = sprite_get_width(object_get_sprite(obj_cube));
 var spriteHeight= sprite_get_height(object_get_sprite(obj_cube));
