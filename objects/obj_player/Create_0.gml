@@ -20,6 +20,6 @@ drawing = false;
 
 //testing pulse stuff
 steptime = 0;
-stepdelay = 5;
+stepdelay = 20;
 
 

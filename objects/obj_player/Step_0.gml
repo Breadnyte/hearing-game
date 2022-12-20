@@ -18,7 +18,7 @@ if (steptime > stepdelay)
 {
 	if !(x == xprevious && y == yprevious) //if last position is different than current
 	{
-		instance_create_layer(x, y, "Instances", obj_pulse); //creates the pulse
+		SoundPulse(x, y); //will edit this to change the size of the pluse and other attributes
 	}
 	steptime = 0;
 }

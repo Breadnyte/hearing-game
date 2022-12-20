@@ -8,6 +8,7 @@
     {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},"order":16,},
     {"id":{"name":"Mike_Wazowski","path":"scripts/Mike_Wazowski/Mike_Wazowski.yy",},"order":0,},
     {"id":{"name":"scr_playeranim","path":"scripts/scr_playeranim/scr_playeranim.yy",},"order":1,},
+    {"id":{"name":"scr_echolocation","path":"scripts/scr_echolocation/scr_echolocation.yy",},"order":2,},
     {"id":{"name":"spr_cube","path":"sprites/spr_cube/spr_cube.yy",},"order":3,},
     {"id":{"name":"scr_movement","path":"scripts/scr_movement/scr_movement.yy",},"order":0,},
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},"order":1,},
