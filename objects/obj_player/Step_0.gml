@@ -17,9 +17,8 @@ steptime++;
 if (steptime > stepdelay)
 {
 	if !(x == xprevious && y == yprevious) //if last position is different than current
-		{
-		//this will get called too much without a delay, but idc
-			instance_create_layer(x, y, "Instances", obj_pulse);
-		}
+	{
+		instance_create_layer(x, y, "Instances", obj_pulse); //creates the pulse
+	}
 	steptime = 0;
 }
