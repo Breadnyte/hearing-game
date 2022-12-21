@@ -18,7 +18,7 @@ if (steptime > stepdelay)
 {
 	if !(x == xprevious && y == yprevious) //if last position is different than current
 	{
-		SoundPulse(x, y); //will edit this to change the size of the pluse and other attributes
+		SoundPulse(x, y, 4, 0.08); //will edit this to change the size of the pluse and other attributes
 	}
 	steptime = 0;
 }
