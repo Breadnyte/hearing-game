@@ -11,6 +11,18 @@ switch (state)
 
 collision();
 
+if !(x == xprevious && y == yprevious) //if last position is different than current
+{
+	if (pOffset < 25)
+	{
+		pOffset++;
+	}
+}
+else
+{
+	pOffset = 0;
+}
+
 
 //create pulse
 steptime++;
@@ -20,7 +32,7 @@ if (steptime > stepdelay)
 	{
 		var pulseVelocity = spd / 25;
 		
-		SoundPulse(x + (hspd * 25), y + (vspd * 25), 5, pulseVelocity); //will edit this to change the size of the pluse and other attributes
+		SoundPulse(x + (hspd * pOffset), y + (vspd * pOffset), 5, pulseVelocity); //will edit this to change the size of the pluse and other attributes
 	}
 	steptime = 0;
 }

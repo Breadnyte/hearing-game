@@ -22,4 +22,6 @@ drawing = false;
 steptime = 0;
 stepdelay = 20;
 
+pOffset = 0;
+
 
