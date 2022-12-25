@@ -11,6 +11,18 @@ switch (state)
 
 collision();
 
+//sneak state switch 
+if (keyboard_check(vk_shift))
+{
+	spd = 0.8;
+}
+else
+{
+	spd = 2;
+}
+
+//setting up echolocation
+
 if !(x == xprevious && y == yprevious) //if last position is different than current
 {
 	if (pOffset < 50)
@@ -31,8 +43,9 @@ if (steptime > stepdelay)
 	if !(x == xprevious && y == yprevious) //if last position is different than current
 	{
 		var pulseVelocity = spd / 25;
+		var pulseSpread = spd * 2;
 		
-		SoundPulse(x + (hspd * pOffset), y + (vspd * pOffset), 5, pulseVelocity); //will edit this to change the size of the pluse and other attributes
+		SoundPulse(x + (hspd * pOffset), y + (vspd * pOffset), pulseSpread, pulseVelocity); //will edit this to change the size of the pluse and other attributes
 	}
 	steptime = 0;
 }
