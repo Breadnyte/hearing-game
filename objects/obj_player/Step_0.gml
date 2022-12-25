@@ -13,9 +13,9 @@ collision();
 
 if !(x == xprevious && y == yprevious) //if last position is different than current
 {
-	if (pOffset < 25)
+	if (pOffset < 50)
 	{
-		pOffset++;
+		pOffset += 2;
 	}
 }
 else
