@@ -18,10 +18,10 @@ if (keyboard_check(vk_shift))
 }
 else
 {
-	spd = 2;
+	spd = ogspd;
 }
 
-//setting up echolocation
+//setting up echolocation offset
 
 if !(x == xprevious && y == yprevious) //if last position is different than current
 {
@@ -48,4 +48,23 @@ if (steptime > stepdelay)
 		SoundPulse(x + (hspd * pOffset), y + (vspd * pOffset), pulseSpread, pulseVelocity); //will edit this to change the size of the pluse and other attributes
 	}
 	steptime = 0;
+	pOffset = 0;
+}
+
+/*if !(x == xprevious && y == yprevious)
+{
+	if (pOffset < 50)
+	{
+		pOffset += 2;
+	}
+	if (steptime > stepdelay)
+	{
+		var pulseVelocity = spd / 25;
+		var pulseSpread = spd * 2;
+		
+		SoundPulse(x + (hspd * pOffset), y + (vspd * pOffset), pulseSpread, pulseVelocity);
+		
+		steptime = 0;
+	}
+	pOffset = 0;
 }

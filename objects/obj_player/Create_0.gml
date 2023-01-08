@@ -7,6 +7,7 @@ image_speed = 0;
 hspd = 0;
 vspd = 0;
 spd = 2;
+ogspd = spd;
 
 //setting animation variables
 frame = 0;
