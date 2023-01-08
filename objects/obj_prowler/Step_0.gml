@@ -2,7 +2,7 @@
 
 switch (state)
 {
-	case "move":
+	case "dormant":
 		prowlerdetect();
 		if (dormant == false)
 		{
