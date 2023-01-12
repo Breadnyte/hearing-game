@@ -4,7 +4,7 @@ if (x == xprevious && y == yprevious)
 {
 	prowlerdormant();
 }
-dormant = true;
+dormant = 1;
 alarm[0] = 200;
 
 

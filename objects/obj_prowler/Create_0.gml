@@ -1,8 +1,7 @@
 /// @description defining variables
 
-dormant = false;
+dormant = 0;
+prowling = 0;
 prowlpath = path_add();
-speed = 2;
-direction = random(360);
 	
 state = "dormant";

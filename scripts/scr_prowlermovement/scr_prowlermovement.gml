@@ -14,44 +14,59 @@ function prowlerdormant()
 function prowlerdetect()
 {
 	//detecting if the player is in the vicinity of the prowler
-	if (point_distance(x, y, obj_player.x, obj_player.y) < 100)
+	if (point_distance(x, y, obj_player.x, obj_player.y) < 200)
 	{
 		//detecting if the player is currently moving or making noise
-		if ((!obj_player.x == obj_player.xprevious && !obj_player.y == obj_player.yprevious) && obj_player.spd > 1)
+		if ((!obj_player.x == obj_player.xprevious || obj_player.y == obj_player.yprevious) && obj_player.spd > 1)
 		{
 			//rolls a chance to detect the player
-			var detect = irandom_range(0, 5)
-			if (detect == 0)
+			if (irandom(3) == 0)
 			{
-				dormant = false;
 				state = "hunt";
 			}
 		}
 	}
 }
+
+function prowlerprowl()
+{
+	var mx = irandom_range(obj_player.x - 50, obj_player.x + 50);
+	var my = irandom_range(obj_player.y - 50, obj_player.y + 50);
+	var distance = point_distance(x, y, obj_player.x, obj_player.y);
+	
+	if (mp_grid_path(global.prowlgrid, prowlpath, x, y, mx, my, 1))
+	{
+		path_start(prowlpath, 1.75, path_action_stop, false);
+	}
+	
+	if (!obj_player.x == obj_player.xprevious || obj_player.y == obj_player.yprevious) && ((distance < 50 && obj_player.spd > 1) || (distance < 5))
+	{
+		alarm[1] = -1;
+		state = "hunt";
+	}
+	
+}
 	
 function prowlerhunt()
-{
+{	
 	var mx = obj_player.x;
 	var my = obj_player.y;
+	var distance = point_distance(x, y, obj_player.x, obj_player.y);
 	//hunting
 	if (mp_grid_path(global.prowlgrid, prowlpath, x, y, mx, my, 1))
 	{
-		path_start(prowlpath, 2.2, path_action_stop, false);
+		path_start(prowlpath, 2.1, path_action_stop, false);
 	}
 	//if the player stops producing sound/moving
 	if (obj_player.x == obj_player.xprevious && obj_player.y == obj_player.yprevious)
 	{
-		var detect = irandom_range(0, 15)
+		if (irandom(10) == 0)
 		{
-			if (detect == 0)
-			{
-				state = "dormant";
-			}
+			dormant = 0;
+			state = "prowl";
 		}
 	}
 }
-
 
 
 
